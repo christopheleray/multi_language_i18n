@@ -30,4 +30,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  header:
+    language: "language"
+    fr: "French-fr"
+    en: "Enhlish-en"
+    home: "home"
+    contact: "contact"
+    about: "about"         
+  home:
+    title: "Welcome to my multilanguage app for Rails"
+    p: "with Ruby on rails application 5.2"
