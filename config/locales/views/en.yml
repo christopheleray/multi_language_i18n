@@ -1,3 +1,4 @@
-  home:
-    title: "Welcome to my multilanguage app for Rails"
-    p: "with Ruby on rails application 5.2"
+  en:
+    home:
+      title: "Welcome to my multilanguage app for Rails"
+      p: "with Ruby on rails application 5.2"
