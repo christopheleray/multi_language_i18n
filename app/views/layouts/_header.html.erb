@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <%= link_to 'i18n', root_path, class: "navbar-brand" %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <%= link_to t('header.home'), root_path, class: "nav-link" %><span class="sr-only">(current)</span>
+      </li>
+      <li class="nav-item">
+        <%= link_to t('header.contact'), contact_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to t('header.about'), about_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= t('header.language') %>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to t('header.fr'), locale: "fr" %>
+          <br>
+          <%= link_to t('header.en'), locale: "en" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
