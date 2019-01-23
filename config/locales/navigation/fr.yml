@@ -6,3 +6,6 @@ fr:
     home: "Accueil"
     contact: "Contacte"
     about: "A propos"
+    sign_up: "S'enregistrer"
+    sign_in: "Se connecter"
+    sign_out: "Se deconnecter"
