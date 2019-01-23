@@ -10,6 +10,6 @@ Rails.application.routes.draw do
     get 'about', to: 'static_pages#about'
     root to: 'static_pages#home'
     devise_for :users
-    resources :users, only: [:show]
+    resources :users, only: [:show, :edit, :update]
   end
 end
