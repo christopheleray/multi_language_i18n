@@ -1,12 +1,10 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
   before_action :authenticate_user!
+  before_action :configure_permitted_parameters, if: :devise_controller?
+
   def show
-    @user = User.find(params[:id])
+    @user = current_user
   end
-
-    def edit
-    @user = User.find(params[:id])
-  end
-
-  def update; end
 end

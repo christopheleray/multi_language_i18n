@@ -9,7 +9,9 @@ Rails.application.routes.draw do
     get 'contact', to: 'static_pages#contact'
     get 'about', to: 'static_pages#about'
     root to: 'static_pages#home'
-    devise_for :users
-    resources :users, only: [:show, :edit, :update]
+    devise_for :users, controllers: {
+      registrations: 'users/registrations'
+    }
+    resources :users, only: [:show]
   end
 end
