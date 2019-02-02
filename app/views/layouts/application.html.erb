@@ -9,17 +9,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <header>
-      <%= render partial: "layouts/header" %>
-    </header>
-    <div class="container">
-      <main>
-        <%= render "layouts/shared/flash_messages" %>
-        <br>
-        <%= yield %>
-      </main>
-    </div>
-    <%= render "layouts/footer" %>
+<body>
+    <%= render 'layouts/header' %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
