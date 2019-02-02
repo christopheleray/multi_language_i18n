@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'post/new'
+  get 'post/show'
   get '/', to: 'static_pages#home'
   # (:locale) not compulsory
   # could be locale: /fr|en/
