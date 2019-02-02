@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_01_23_100852) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "locale", default: "fr"
-    t.string "frist_name"
+    t.string "first_name"
     t.string "last_name"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
