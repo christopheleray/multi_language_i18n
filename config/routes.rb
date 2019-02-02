@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'post/new'
-  get 'post/show'
   get '/', to: 'static_pages#home'
   # (:locale) not compulsory
   # could be locale: /fr|en/
@@ -14,6 +12,8 @@ Rails.application.routes.draw do
     devise_for :users, controllers: {
       registrations: 'users/registrations'
     }
-    resources :users, only: [:show]
+    resources :users, only: [:show] do
+      resources :posts, only: %i[index new create show]
+    end
   end
 end
