@@ -2,3 +2,6 @@
 <h1><%= t('home.title') %></h1>
 <p><%= t('home.p') %></p>
 </div>
+<div class="container">
+    <p><%= link_to 'New post', new_user_post_path(current_user), class: "btn btn-primary" %></p>
+</div>
