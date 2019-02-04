@@ -16,24 +16,27 @@ User.delete_all
     password: "password",
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
-    locale: "fr")
-    p "User fr #{i} : créé"      
+    locale: "fr"
+  )
+  p "User fr #{i} : créé"
 end
 
-  5.times do |i|
-    User.create!(
-      email: Faker::Internet.unique.email,
-      password: "password",
-      first_name: Faker::Name.first_name,
-      last_name: Faker::Name.last_name,
-      locale: "en")
-    p "User en #{i} : créé"                  
-  end
+5.times do |i|
+  User.create!(
+    email: Faker::Internet.unique.email,
+    password: "password",
+    first_name: Faker::Name.first_name,
+    last_name: Faker::Name.last_name,
+    locale: "en"
+  )
+  p "User en #{i} : créé"
+end
 
 50.times do |i|
   Post.create!(
-    title: Faker::FamilyGuy.character, 
-    content: Faker::FamilyGuy.quote, 
-    user_id: Faker::Number.between(User.first.id,User.last.id))
-  p "Post #{i} : créé"      
-end  
+    title: Faker::FamilyGuy.character,
+    content: Faker::FamilyGuy.quote,
+    user_id: Faker::Number.between(User.first.id, User.last.id)
+  )
+  p "Post #{i} : créé"
+end
