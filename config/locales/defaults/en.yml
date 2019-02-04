@@ -1,2 +1,8 @@
 en:
   valid_post: "Post successful"
+  record_not_found: "Record not found"
+  time:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
