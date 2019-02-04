@@ -2,7 +2,8 @@
 
 class StaticPagesController < ApplicationController
   def home
-   # @user = current_user
+    @posts = Post.all
+    @user = current_user
   end
 
   def contact; end
