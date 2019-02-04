@@ -2,5 +2,10 @@
     home:
       title: "Welcome to my multilanguage app for Rails"
       p: "with Ruby on rails application 5.2"
+      post: "Post created by"
+      post_date: "Posted at"
+      button: 
+        sign_in: "Sign_in"
+        new_post:  "New post"  
     post:
       new_title: "Create a new post" 
