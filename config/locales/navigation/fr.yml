@@ -1,6 +1,6 @@
 fr:
   header:
-    language: "Langue"
+    language: "language"
     fr: "Français-fr"
     en: "Anglais-en"
     home: "Accueil"
@@ -9,4 +9,3 @@ fr:
     sign_up: "S'enregistrer"
     sign_in: "Se connecter"
     sign_out: "Se deconnecter"
-    profile: "Profil"
