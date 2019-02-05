@@ -2,6 +2,7 @@
 <h1><%= t('home.title') %></h1>
 <p><%= t('home.p') %></p>
 </div>
+<p><%= post_count(current_user) if user_signed_in? %><p>
 <div class="container">
   <% if user_signed_in? %>
     <p><%= link_to t('home.button.new_post'), new_user_post_path(@user), class: "btn btn-primary" %></p>
@@ -11,9 +12,11 @@
 </div>
 <div class="container post-container">
   <p><% @posts.each do |post| %></p>
+  <div class="border">
     <p><%= t('home.post') %> : <%= post.user.first_name %></p>
     <p><%= t('home.post_date') %> : <%= l post.updated_at %></p>
     <p><%= post.title %></p>
     <p><%= post.content %></p>
+  </div>
   <% end %>
 </div>
