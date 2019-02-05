@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   def record_invalid(e)
     # L'exception contient le post qui a échoué
-    flash[:error] = "Something went wrong: #{e.record.errors.full_messages.join(", ")}"
+    flash[:error] = t('record_invalid', e: e.record.errors.full_messages.join(", "))
     redirect_to(home_path)
   end
 
