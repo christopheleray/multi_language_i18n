@@ -2,3 +2,14 @@ fr:
   user:
     profile: 
       title: "Page profile utilisateur : "
+  activerecord:
+    models:
+      post: "Article"
+      user: "Utilisateur"
+    attributes:
+      post:
+      title: "Titre"
+      content: "Contenu"
+      user_id: "Utilisateur"
+      first_name: "Prénom"
+      last_name: "Nom"
