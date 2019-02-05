@@ -1,4 +1,15 @@
-fr:
+en:
   user:
     profile: 
-      title: "Page profile utilisateur : "
+      title: "User page profile: "
+  activerecord:
+    models:
+      post: "Post"
+      user: "User"
+    attributes:
+      post:
+      title: "Title"
+      content: "Content"
+      user_id: "User"
+      first_name: "first_name"
+      last_name: "last_name"     
