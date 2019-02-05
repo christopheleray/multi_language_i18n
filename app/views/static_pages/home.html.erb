@@ -16,7 +16,7 @@
   <p><% @posts.each do |post| %></p>
   <div class="border">
     <p><%= t('home.post') %> : <%= post.user.first_name %></p>
-    <p><%= t('home.post_date') %> : <%=  post.updated_at %></p>
+    <p><%= t('home.post_date') %> : <%= l post.updated_at %></p>
     <p><%= post.title %></p>
     <p><%= post.content %></p>
   </div>
