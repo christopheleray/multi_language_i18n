@@ -1,1 +1,9 @@
 fr:
+  valid_post: "Post bien enregistré"
+  record_not_found: "Enregistremnt non trouvé"
+  record_invalid: "Quelques chose c'est mal passé"
+  time:
+    formats:
+      default: "%d-%m-%Y - %H:%M:%S"
+      short: "%B %d"
+      long: "%d %b, %Y"

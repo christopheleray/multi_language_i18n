@@ -2,3 +2,11 @@
     home:
       title: "Bienvenue sur l'application de test multilangue avec i18n"
       p: "avec Ruby on rails application 5.2"
+      post: "Post crée par"
+      post_date: "Posté le"
+      post_count: "Vous avez posté %{count} articles"
+      button: 
+        sign_in: "Se connecter"
+        new_post:  "Nouveau post"
+    post:
+      new_title: "Créer un nouveau poste"  
