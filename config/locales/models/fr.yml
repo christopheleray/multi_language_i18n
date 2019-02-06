@@ -1,15 +1,17 @@
 fr:
   user:
     profile: 
-      title: "Page profile utilisateur : "
+      title: "Page profile utilisateur : "   
   activerecord:
     models:
-      post: "Article"
-      user: "Utilisateur"
+      post: "article"
+      user: "utilisateur"
     attributes:
       post:
-      title: "Titre"
-      content: "Contenu"
-      user_id: "Utilisateur"
-      first_name: "Prénom"
-      last_name: "Nom"
+        title: "Titre"
+        content: "Contenu"
+        new_title : "Nouvel article"
+      user:
+        user_id: "Utilisateur"
+        first_name: "Prénom"
+        last_name: "Nom"

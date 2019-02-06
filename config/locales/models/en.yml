@@ -4,12 +4,14 @@ en:
       title: "User page profile: "
   activerecord:
     models:
-      post: "Post"
-      user: "User"
+      post: "post"
+      user: "user"
     attributes:
       post:
-      title: "Title"
-      content: "Content"
-      user_id: "User"
-      first_name: "first_name"
-      last_name: "last_name"     
+        title: "Title"
+        content: "Content"
+        new_title : "New post"
+      user:
+        user_id: "User"
+        first_name: "First name"
+        last_name: "Last name"    
