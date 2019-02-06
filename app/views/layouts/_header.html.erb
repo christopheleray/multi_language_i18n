@@ -14,16 +14,6 @@
       <li class="nav-item">
         <%= link_to t('header.about'), about_path, class: "nav-link" %>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <%= t('header.language') %>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <%= link_to t('header.fr'), locale: "fr" %>
-          <br>
-          <%= link_to t('header.en'), locale: "en" %>
-        </div>
-      </li>
       <% if user_signed_in? %>
         <li class="nav-item">
           <%= link_to t('header.profile'), user_path(current_user), class: "nav-link" %>
