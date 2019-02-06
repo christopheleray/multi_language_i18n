@@ -8,5 +8,10 @@ fr:
     button: 
       sign_in: "Se connecter"
       new_post: "Nouveau post"
-  post:
-    new_title: "Créer un nouveau poste"  
+  poster:
+    new_title: "Créer un nouveau poste"
+  user:
+    first_name: "Prénom"
+    last_name: "Nom"
+    language: "langue"
+    update_profile: "Mise à jour profil"

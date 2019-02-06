@@ -10,3 +10,8 @@ en:
       new_post:  "New post"  
   post:
     new_title: "Create a new post" 
+  user:
+    first_name: "First Name"
+    last_name: "Leray"
+    language: "language"   
+    update_profile: "Update profile" 

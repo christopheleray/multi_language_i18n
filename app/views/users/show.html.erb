@@ -1,10 +1,10 @@
 <div class="container">
   <h1><%= t('user.profile.title') %><%= @user.email %></h1>
-  <p>First Name: </p>
+  <p><%= t('user.first_name') %></p>
   <p><%= @user.first_name %></p>
-  <p>Last Name : </p>
+  <p><%= t('user.last_name') %></p>
   <p><%= @user.last_name %></p>
-  <p>Langue: </p>
+  <p><%= t('user.language') %></p>
   <p><%= @user.locale %></p>
-  <p><%= link_to 'Update profile', edit_user_registration_path %></p>
+  <p><%= link_to t('user.update_profile'), edit_user_registration_path %></p>
 </div>
